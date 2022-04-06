@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orígenes Arquitectura</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body id="p-proyectos">
+    <nav>
+        <div class="cajaNav"> 
+            <div class="titNav">
+                <a class="logo" href="index.html">
+                    <img src="https://iili.io/1hgAUG.png" alt="logo">
+                </a>         
+            </div>      
+            <a class="toggle" onclick="alternar('menu')">
+                <img src="https://iili.io/1ymMmX.png" alt="">
+            </a>
+            <ul class="barNav navA"> 
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+            </ul>       
+            <div class="botones">   
+                <a href="#">
+                    <img src="https://iili.io/GEGe8G.png" alt="icono instagram">
+                </a>
+                <a href="#">
+                  <img src="https://iili.io/GEGOas.png" alt="icono facebook">
+                </a>
+            </div>
+        </div>
+        <ul class="barNav navB cerrado" id="menu"> 
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="proyectos.html">PROYECTOS</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+        </ul>  
+    </nav> 
+    <main id="proyectos">
+        <h1 class="g-tituloPrincipal">Nuestro trabajo</h1>
+        <p>Apuntamos a una arquitectura paisajista donde conjuguen elementos arquitectónicos de diseño, formando un nexo entre el interior y el exterior.</p>
+        <div class="contenedorCards">
+            <a href="./patiozen.html">
+                <div class="cards card1">
+                    <img src="https://iili.io/GIktMG.jpg" alt="...">
+                    <div>
+                        <h5 class="g-tituloCards">Patio Zen</h5>
+                        <p>Lograr un ambiente fluido y dinámico donde intervienen diferentes actores, generando espacios vividos.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./patiomexicano.html">
+                <div class="cards card2">
+                    <img src="https://iili.io/GIkK2p.jpg" alt="...">
+                    <div>
+                        <h5 class="g-tituloCards">Patio Mexicano</h5>
+                        <p>Colocación de elementos arquitectónicos que hacen un espacio en conjugación con la vegetación.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./fachada.html">
+                <div class="cards card3">
+                    <img src="https://iili.io/GIku44.jpg" alt="...">
+                    <div class="g-cardBody">
+                        <h5 class="g-tituloCards">Fachada</h5>
+                        <p>La sencillez, naturalidad y armonía dan como resultado un diseño de buen gusto.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./piscinanatural.html">
+                <div class="cards card4">
+                    <img src="https://iili.io/GIktMG.jpg" alt="...">
+                    <div>
+                        <h5 class="g-tituloCards">Piscina Natural</h5>
+                        <p>Hacer de tu patio un oasis de relajación y disfrute.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./cubiertasverdes.html">
+                <div class="cards card5">
+                    <img src="https://iili.io/GIkK2p.jpg" alt="...">
+                    <div>
+                        <h5 class="g-tituloCards">Cubiertas verdes</h5>
+                        <p>Las posibilidades de aumentar las áreas verdes, más allá de los patios, parques y jardines, son múltiples.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./galeria.html">
+                <div class="cards card6">
+                    <img src="https://iili.io/GIku44.jpg" alt="...">
+                    <div>
+                        <h5 class="g-tituloCards">Galería</h5>
+                        <p>Dar solución para lograr la mayor integración con el medio, es nuestro objetivo.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="g-coordinemos-container">
+            <h2 class="g-tituloSeccion">Coordinemos una cita</h2>
+            <p>Comunicate por WhatsApp</p>
+            <button class="g-button">Conversemos</button>
+        </div>
+    </main>
+    <script>
+        function alternar(menu)
+        {
+            var oMenu = document.getElementById(menu);
+        //Si el menu tiene clase abierto
+        //cambia clase a cerrado y cambia el botón
+        if (oMenu.classList.contains('abierto')){
+            oMenu.classList.remove('abierto');
+            oMenu.classList.add('cerrado');
+            //event.target.innerText = 'Abrir'
+        }
+        //Si no está abierto, cambia clase a abierto y cambia el botón 
+        else{
+            oMenu.classList.remove('cerrado');
+            oMenu.classList.add('abierto');
+            //event.target.innerText = 'Cerrar'
+            }
+        }
+        </script>    
+</body>
+</html>    
+

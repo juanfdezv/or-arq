@@ -1,0 +1,125 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;800&family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.g-tituloInfo{
+    font-size: $headline6;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    padding-bottom: 8px;
+    @media(max-width: 992px){
+        font-size: $headline6;
+        font-weight: 400;
+    }
+}
+
+.g-tituloSeccion{
+    font-size: $headline2;
+    font-family: 'Playfair Display', serif;
+    @media(max-width: 992px){
+        font-size: $headline5;
+    }
+}
+
+.g-button {
+    color: #ffffff;
+    background-color: $bgVerde;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    padding: .75em 3em;
+    margin: 5px 0;
+    cursor: pointer;
+    max-width: 200px;
+}
+
+.g-coordinemos-container {
+    width: 100%;
+    height: 40vh;
+    background-color: $bgCrema;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & > * {
+        margin: 15px 0;
+    }
+
+    & > .g-button {
+        padding-top: 8px;
+    }
+}
+
+.proyecto {
+    .g-hero-img-container {
+        width: 100%;
+        height: auto;
+        .g-hero-img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .g-info-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 40vh;
+        height: auto;
+        padding: 10px 15vw;
+
+
+        .g-info {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            height: auto;
+
+            @media(max-width: 600px){
+                flex-direction: column;
+            }
+    
+            .container-left {
+                flex: 1;
+                padding-right: 35px;
+            }
+    
+            .container-right {
+                flex: 3;
+            }
+
+            .ubicacion {
+                margin: 20px 0;
+            }
+
+            .descripcion {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .fotos {
+        width: 100%;
+        height: auto;
+        padding: 0 15vw;
+
+        & > * {
+            margin-bottom: 20px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
