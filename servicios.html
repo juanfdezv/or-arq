@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Orígenes Arquitectura</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body id="p-servicios">
+    <nav>
+        <div class="cajaNav"> 
+            <div class="titNav">
+                <a class="logo" href="index.html">
+                    <img src="https://iili.io/1hgAUG.png" alt="logo">
+                </a>         
+            </div>      
+            <a class="toggle" onclick="alternar('menu')">
+                <img src="https://iili.io/1ymMmX.png" alt="">
+            </a>
+            <ul class="barNav navA"> 
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+            </ul>       
+            <div class="botones">   
+                <a href="#">
+                    <img src="https://iili.io/GEGe8G.png" alt="icono instagram">
+                </a>
+                <a href="#">
+                  <img src="https://iili.io/GEGOas.png" alt="icono facebook">
+                </a>
+            </div>
+        </div>
+        <ul class="barNav navB cerrado" id="menu"> 
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="proyectos.html">PROYECTOS</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+        </ul>  
+    </nav>  
+    <main>
+        <section id="principalServicios">
+            <h1 class="g-tituloPrincipal">Nuestros servicios</h1>
+            <p>Nos especializamos en la Arquitectura paisajista, pero trabajamos la totalidad del hogar.</p>
+            <img src="https://iili.io/GpJzqF.png" alt="">
+            <h2 class="g-tituloSeccion">Arquitectura paisajista</h2>
+            <p class="textBox">Nuestro propósito es acompañar a nuestros clientes en la creación de paisajes y jardines de diseño. Tanto durante el diseño como en la ejecución de la obra.</p>
+            <div class="contenedorCards">
+                <div class="segundoContenedor">
+                    <div class="cards card1">
+                        <img src="https://iili.io/GW5oTN.jpg" class="cardImg" alt="...">
+                        <div>
+                            <h3 class="g-tituloCards">Piscinas</h3>
+                            <p class="cardText">Realizamos diseños personalizados de piscinas.</p>
+                        </div>
+                    </div>
+                    <div class="cards card2">
+                        <img src="https://iili.io/GW5Cpp.jpg" class="cardImg" alt="...">
+                        <div class="g-cardBody">
+                            <h3 class="g-tituloCards">Riego</h3>
+                            <p class="cardText">Sistemas automatizados que proporcionan un mantenimiento perfecto y sencillo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="segundoContenedor">
+                    <div class="cards card3">
+                        <img src="https://iili.io/GW5lu2.jpg" class="cardImg" alt="...">
+                        <div>
+                            <h3 class="g-tituloCards">Quincho</h3>
+                            <p class="cardText">Nexos que incorporen el interior con el exterior.</p>
+                        </div>
+                    </div>
+                    <div class="cards card4">
+                        <img src="https://iili.io/GW5A4s.jpg" class="cardImg" alt="...">
+                        <div class="g-cardBody">
+                            <h3 class="g-tituloCards">Parquización </h3>
+                            <p class="cardText">Diseños sensibles y naturales con equilibrio y buen gusto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="arquitecturaGeneral">
+            <h2 class="g-tituloSeccion">Arquitectura General</h2>
+            <div class="contenedorArquitectura">
+                <img src="https://iili.io/GOEj6J.jpg">
+                <p>Somos un equipo humano que afronta cada reto con ilusión renovadora y espíritu de perfección. Hacemos remodelaciones, mantenimientos, consultoría integral, diseño y ejecución de obra.</p>
+            </div>       
+        </section>
+        <section id="renovar">
+            <div class="imagen">
+                <div class="contenedorImagen">
+                    <img src="https://iili.io/Geanqv.jpg">
+                    <img src="https://iili.io/Geuxg1.png">
+                </div>
+                <div class="contenedorImagen">
+                    <img src="https://iili.io/Geuo0P.jpg">
+                    <img src="https://iili.io/GeunqB.jpg"> 
+                </div>
+            </div>
+            <div class="texto">
+                <p>Renovar sin obra</p>
+                <p>Podemos diseñar un nuevo espacio conjugando la totalidad de su extensión con complementos, elementos arquitectónicos y detalles que hagan a la diferencia. Creando nuevas experiencias, e incorporando nuevos elementos.</p>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2 class="g-tituloSeccion">Coordinemos una cita</h2>
+            <p>Comunícate por WhatsApp</p>
+            <button class="g-button">CONVERSEMOS</button>
+        </section>
+        <footer>
+            
+        </footer>
+    </main> 
+    <script>
+        function alternar(menu)
+        {
+            var oMenu = document.getElementById(menu);
+        //Si el menu tiene clase abierto
+        //cambia clase a cerrado y cambia el botón
+        if (oMenu.classList.contains('abierto')){
+            oMenu.classList.remove('abierto');
+            oMenu.classList.add('cerrado');
+            //event.target.innerText = 'Abrir'
+        }
+        //Si no está abierto, cambia clase a abierto y cambia el botón 
+        else{
+            oMenu.classList.remove('cerrado');
+            oMenu.classList.add('abierto');
+            //event.target.innerText = 'Cerrar'
+            }
+        }
+        </script>      
+    </body>
+    </html>
