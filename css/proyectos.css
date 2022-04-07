@@ -1081,7 +1081,7 @@ body {
   margin-top: 112px;
 }
 
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .proyecto .masProyectos .contenedorCards .card1, .proyecto .masProyectos .contenedorCards .card3 {
     margin-top: 0;
   }
