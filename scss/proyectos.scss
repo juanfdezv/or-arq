@@ -1,4 +1,5 @@
 @import "variables";
+@import "styles";
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;800&family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap');
 
 * {
@@ -120,6 +121,33 @@ body {
             margin-bottom: 20px;
             width: 100%;
             height: auto;
+        }
+    }
+    .masProyectos{
+        @extend %flexContainer;
+        h3{
+            font-family: 'Playfair Display', serif;
+            font-size: $headline3;
+            margin: 76px 0 69px 0;
+        }
+        .contenedorCards{
+            @include card(331px,10px,270px);
+            h5{
+                margin-top: 20px;
+            } 
+            .card1{
+                margin-top: 176px;
+            }
+            .card3{
+                margin-top: 112px;
+            }
+        } 
+        @media (max-width: 766px){
+            .contenedorCards{
+                .card1, .card3{
+                    margin-top: 0;
+                }
+            }    
         }
     }
 }
