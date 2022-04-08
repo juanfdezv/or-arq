@@ -535,16 +535,20 @@ nav .navB {
   margin: 28px 0 28px 0;
 }
 
+#proyectos .contenedorCards .card5 {
+  margin-top: -50px;
+}
+
 #proyectos .contenedorCards .card1, #proyectos .contenedorCards .card4 {
-  margin-top: 176px;
+  margin-top: 126px;
 }
 
 #proyectos .contenedorCards .card3, #proyectos .contenedorCards .card6 {
-  margin-top: 112px;
+  margin-top: 62px;
 }
 
 @media (max-width: 827px) {
-  #proyectos .contenedorCards .card1, #proyectos .contenedorCards .card3, #proyectos .contenedorCards .card4, #proyectos .contenedorCards .card6 {
+  #proyectos .contenedorCards .cards {
     margin-top: 0;
   }
 }
@@ -713,7 +717,19 @@ nav .navB {
   max-width: 508px;
 }
 
-@media (max-width: 551px) {
+@media (max-width: 1052px) {
+  #p-servicios #arquitecturaGeneral .contenedorArquitectura img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 828px) {
+  #p-servicios #arquitecturaGeneral .contenedorArquitectura img {
+    max-width: 256px;
+  }
+}
+
+@media (max-width: 600px) {
   #p-servicios #arquitecturaGeneral {
     padding: 58px 16px 64px 16px;
   }
@@ -726,6 +742,7 @@ nav .navB {
   #p-servicios #arquitecturaGeneral .contenedorArquitectura img {
     margin-bottom: 31px;
     margin-right: 0;
+    max-width: 328px;
   }
 }
 
@@ -763,13 +780,31 @@ nav .navB {
   margin-top: 104px;
 }
 
-@media (max-width: 720px) {
-  #p-servicios #renovar .imagen .contenedorImagen :first-child {
-    margin-top: 0;
+@media (max-width: 1052px) {
+  #p-servicios #renovar .imagen .contenedorImagen img {
+    max-width: 400px;
   }
 }
 
-@media (max-width: 551px) {
+@media (max-width: 828px) {
+  #p-servicios #renovar .imagen .contenedorImagen :first-child {
+    margin-top: 0;
+  }
+  #p-servicios #renovar .imagen .contenedorImagen img {
+    max-width: 352px;
+  }
+}
+
+@media (max-width: 740px) {
+  #p-servicios #renovar .imagen .contenedorImagen :first-child {
+    margin-top: 0;
+  }
+  #p-servicios #renovar .imagen .contenedorImagen img {
+    max-width: 256px;
+  }
+}
+
+@media (max-width: 600px) {
   #p-servicios #renovar .imagen {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

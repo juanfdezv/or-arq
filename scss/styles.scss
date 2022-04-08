@@ -328,16 +328,19 @@ nav{
         h5{
             margin: 28px 0 28px 0;
         }
+        .card5{
+            margin-top: -50px;
+        }
         .card1, .card4{
-            margin-top: 176px;
+            margin-top: 126px;
         }
         .card3, .card6{
-            margin-top: 112px;
+            margin-top: 62px;
         }
     }
     @media (max-width: 827px){
         .contenedorCards{
-            .card1, .card3, .card4, .card6{
+            .cards{
                 margin-top: 0;
             }
         }    
@@ -416,13 +419,29 @@ nav{
                 max-width: 508px;
             }    
         }
-        @media(max-width:551px){
+        @media(max-width: 1052px) {
+            .contenedorArquitectura{
+                img{
+                    max-width: 400px;
+                }
+            }
+        }
+        @media(max-width: 828px){
+            .contenedorArquitectura{
+                img{
+                    max-width: 256px;
+                }
+            }
+        }
+        
+        @media(max-width:600px){
             padding: 58px 16px 64px 16px;
             .contenedorArquitectura{
                 flex-direction: column;
                 img{
                     margin-bottom: 31px;
                     margin-right: 0;
+                    max-width: 328px;
                 }
             }    
         }
@@ -448,14 +467,34 @@ nav{
                     margin-top: 104px;
                 }
             }
-            @media(max-width: 720px){
+            @media(max-width: 1052px) {
+                .contenedorImagen{
+                    img{
+                        max-width: 400px;
+                    }
+                }
+            }
+            @media(max-width: 828px){
                 .contenedorImagen{
                     :first-child{
                         margin-top: 0;
                     }
+                    img{
+                        max-width: 352px;
+                    }
                 }
             }
-            @media (max-width: 551px){
+            @media(max-width: 740px){
+                .contenedorImagen{
+                    :first-child{
+                        margin-top: 0;
+                    }
+                    img{
+                        max-width: 256px;
+                    }
+                }
+            }
+            @media (max-width: 600px){
                 flex-direction: column;
                 flex-wrap: wrap;
                 .contenedorImagen{
