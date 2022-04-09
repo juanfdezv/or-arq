@@ -11,14 +11,16 @@ body {
 
 /**Clases Globales**/
 .g-tituloPrincipal {
+  margin-top: 88px;
   font-size: 57px;
   font-family: 'Playfair Display', serif;
   text-align: center;
   line-height: 4rem;
 }
 
-@media (min-width: 481px) and (max-width: 992px) {
+@media (max-width: 992px) {
   .g-tituloPrincipal {
+    margin-top: 44px;
     font-size: 36px;
   }
 }
@@ -441,7 +443,7 @@ nav .navB {
 
 /**Proyectos**/
 #proyectos h1 {
-  margin: 98px 0 48px 0;
+  margin-bottom: 48px;
 }
 
 #proyectos p {
@@ -562,7 +564,7 @@ nav .navB {
 
 /**Servicios**/
 #p-servicios #principalServicios h1 {
-  margin: 88px 0 28px 0;
+  margin-bottom: 28px;
 }
 
 #p-servicios #principalServicios img {

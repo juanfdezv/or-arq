@@ -14,11 +14,13 @@ body {
 /**Clases Globales**/
 
 .g-tituloPrincipal{
+    margin-top: 88px;
     font-size: $headline1;
     font-family: 'Playfair Display', serif;
     text-align: center;
     line-height: 4rem;
-    @media(min-width:481px) and (max-width: 992px){
+    @media(max-width: 992px){
+        margin-top: 44px;
         font-size: $headline3;
     }
     @media(max-width:480px){
@@ -307,7 +309,7 @@ nav{
 #proyectos{
     @extend %flexContainer;
     h1{
-        margin: 98px 0 48px 0;
+        margin-bottom: 48px;
     }
     p{
         max-width: 686px;
@@ -359,7 +361,7 @@ nav{
     #principalServicios {
         @extend %flexContainer; 
         h1{
-            margin: 88px 0 28px 0;
+            margin-bottom: 28px;
         }
         img{
             width: 100%;
