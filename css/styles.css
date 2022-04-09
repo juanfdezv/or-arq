@@ -536,15 +536,22 @@ nav .navB {
 }
 
 #proyectos .contenedorCards .card5 {
-  margin-top: -50px;
+  margin-top: -70px;
 }
 
 #proyectos .contenedorCards .card1, #proyectos .contenedorCards .card4 {
-  margin-top: 126px;
+  margin-top: 106px;
 }
 
 #proyectos .contenedorCards .card3, #proyectos .contenedorCards .card6 {
-  margin-top: 62px;
+  margin-top: 42px;
+}
+
+#proyectos .contenedorCards .underline {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3FAF67;
+  text-decoration: underline;
 }
 
 @media (max-width: 827px) {

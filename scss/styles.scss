@@ -329,13 +329,19 @@ nav{
             margin: 28px 0 28px 0;
         }
         .card5{
-            margin-top: -50px;
+            margin-top: -70px;
         }
         .card1, .card4{
-            margin-top: 126px;
+            margin-top: 106px;
         }
         .card3, .card6{
-            margin-top: 62px;
+            margin-top: 42px;
+        }
+        .underline{
+            font-size: 18px;
+            font-weight: 400;
+            color: $bgVerde;
+            text-decoration: underline;
         }
     }
     @media (max-width: 827px){
