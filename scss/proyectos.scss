@@ -131,9 +131,10 @@ body {
             margin: 76px 0 69px 0;
         }
         .contenedorCards{
+            margin-bottom: 77px;
             @include card(331px,10px,270px);
             h5{
-                margin-top: 20px;
+                margin: 28px 0 28px 0;
             } 
             .card1{
                 margin-top: 176px;
@@ -143,6 +144,9 @@ body {
             }
         } 
         @media (max-width: 767px){
+            h3{
+                font-size: $headline5;
+            }
             .contenedorCards{
                 .card1, .card3{
                     margin-top: 0;
