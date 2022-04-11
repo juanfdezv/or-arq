@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Orígenes Arquitectura</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body id="p-nosotros">
+<!--     <nav>
+        <div class="cajaNav"> 
+            <div class="titNav">
+                <a class="logo" href="index.html">
+                    <img src="https://iili.io/1hgAUG.png" alt="logo">
+                </a>         
+            </div>      
+            <a class="toggle" onclick="alternar('menu')">
+                <img src="https://iili.io/1ymMmX.png" alt="">
+            </a>
+            <ul class="barNav navA"> 
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+            </ul>       
+            <div class="botones">   
+                <a href="https://instagram.com/origenesarquitecturaok?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer nofollow">
+                    <img src="https://iili.io/GEGe8G.png" alt="icono instagram">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer nofollow">
+                  <img src="https://iili.io/GEGOas.png" alt="icono facebook">
+                </a>
+            </div>
+        </div>
+        <ul class="barNav navB cerrado" id="menu"> 
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="proyectos.html">PROYECTOS</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+        </ul>  
+    </nav> -->
+    <main>
+        <section id="landing">
+            <h1 class="g-tituloPrincipal">Arquitectura inspirada en lo natural</h1>
+            <img src="https://iili.io/V3TbiF.png" alt="fotos exteriores">
+        </section>
+        <section id="sobreNosotros">
+            <h2 class="g-tituloSeccion">Sobre nosotros</h2>
+            <div class="container">
+                <div class="container-left">
+                    <img src="https://iili.io/V3TDV1.png" alt="">
+                </div>
+                <div class="container-right">
+                    <p>Somos una empresa que se dedica a la arquitectura paisajista. Diseñando, creando vida, otorgando emociones y vivencias en zonas degradadas o sin valor. Obteniendo pulmones verdes sin salir del hogar; dando una respuesta de diseño coherente con los tiempos, y comprometida con los recursos. Que nos darán como resultado refugios urbanos naturales, necesarios para descontracturar el ritmo veloz de la vida cotidiana.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="g-coordinemos-container">
+        <h2 class="g-tituloSeccion">Coordinemos una cita</h2>
+        <p>Comunicate por WhatsApp</p>
+        <button class="g-button">Conversemos</button>
+    </div>
+    <script>
+    function alternar(menu)
+    {
+        var oMenu = document.getElementById(menu);
+    //Si el menu tiene clase abierto
+    //cambia clase a cerrado y cambia el botón
+    if (oMenu.classList.contains('abierto')){
+        oMenu.classList.remove('abierto');
+        oMenu.classList.add('cerrado');
+        //event.target.innerText = 'Abrir'
+    }
+    //Si no está abierto, cambia clase a abierto y cambia el botón 
+    else{
+        oMenu.classList.remove('cerrado');
+        oMenu.classList.add('abierto');
+        //event.target.innerText = 'Cerrar'
+        }
+    }
+    </script>      
+</body>
+</html>
