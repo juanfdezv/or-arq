@@ -18,7 +18,7 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     padding-bottom: 8px;
-    @media(max-width: 992px){
+    @media(max-width: 828px){
         font-size: $headline6;
         font-weight: 400;
     }
@@ -27,7 +27,7 @@ body {
 .g-tituloSeccion{
     font-size: $headline2;
     font-family: 'Playfair Display', serif;
-    @media(max-width: 992px){
+    @media(max-width: 828px){
         font-size: $headline5;
     }
 }
@@ -134,7 +134,8 @@ body {
             margin-bottom: 77px;
             @include card(331px,10px,270px);
             h5{
-                margin: 28px 0 28px 0;
+                margin-top: 20px;
+                margin-bottom: 20px;
             } 
             .card1{
                 margin-top: 176px;
