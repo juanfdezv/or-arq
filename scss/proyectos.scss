@@ -133,6 +133,10 @@ body {
         .contenedorCards{
             margin-bottom: 77px;
             @include card(331px,10px,270px);
+            a{
+                text-decoration: none;
+                color: #000;
+            }
             h5{
                 margin-top: 20px;
                 margin-bottom: 20px;

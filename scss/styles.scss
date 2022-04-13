@@ -397,7 +397,10 @@ nav{
                     .card2, .card4{
                         margin-top: 0;
                     }
-                }    
+                } 
+                h3{
+                    margin-bottom: 8px;
+                }   
                 @media(max-width:551px){
                     flex-direction: column;
                 }    
