@@ -85,6 +85,18 @@ body {
     }
 }
 
+.g-contacto{
+    width: 100%;
+    @extend %flexContainer;
+    background: $bgCrema;
+    :first-child{
+        margin: 100px 0 11px 0;
+    }
+    :last-child{
+        margin: 35px 0 120px 0;
+    }
+}
+
 /**Mixins y extends**/
 
 %flexContainer{
@@ -199,7 +211,7 @@ nav{
         display: none;
     }
 
-    @media (max-width: 992px){
+    @media (max-width: 828px){
         display: flex;
         flex-direction: column;
        .navB{
@@ -397,7 +409,10 @@ nav{
                     .card2, .card4{
                         margin-top: 0;
                     }
-                }    
+                } 
+                h3{
+                    margin-bottom: 8px;
+                }   
                 @media(max-width:551px){
                     flex-direction: column;
                 }    
@@ -528,16 +543,6 @@ nav{
                 margin-bottom: 120px;
             }    
         }      
-    }
-    #contacto{
-        @extend %flexContainer;
-        background: $bgCrema;
-        :first-child{
-            margin: 106px 0 11px 0;
-        }
-        :last-child{
-            margin: 35px 0 129px 0;
-        }
     }
 }
 
