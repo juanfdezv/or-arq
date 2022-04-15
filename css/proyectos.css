@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;800&family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;800&family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;800&family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;800&family=Playfair+Display:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -113,8 +113,21 @@ body {
   padding-top: 8px;
 }
 
+.g-contacto {
+  width: 100%;
+  background: #F2ECDE;
+}
+
+.g-contacto :first-child {
+  margin: 100px 0 11px 0;
+}
+
+.g-contacto :last-child {
+  margin: 35px 0 120px 0;
+}
+
 /**Mixins y extends**/
-#introProyectos, #proyectos, #p-servicios #principalServicios, #p-servicios #arquitecturaGeneral, #p-servicios #renovar, #p-servicios #contacto, .proyecto .masProyectos {
+.g-contacto, #introProyectos, #proyectos, #p-servicios #principalServicios, #p-servicios #arquitecturaGeneral, #p-servicios #renovar, #p-nosotros #nosotros, .proyecto .masProyectos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,7 +245,7 @@ nav .navB {
   display: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 828px) {
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -853,20 +866,8 @@ nav .navB {
   margin-bottom: 120px;
 }
 
-#p-servicios #contacto {
-  background: #F2ECDE;
-}
-
-#p-servicios #contacto :first-child {
-  margin: 106px 0 11px 0;
-}
-
-#p-servicios #contacto :last-child {
-  margin: 35px 0 129px 0;
-}
-
 /**Nosotros**/
-#p-nosotros {
+#p-nosotros #nosotros #landing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -879,40 +880,18 @@ nav .navB {
           align-items: center;
 }
 
-#p-nosotros main {
-  padding: 0 20px;
+#p-nosotros #nosotros #landing h1 {
+  margin-bottom: 20px;
 }
 
-#p-nosotros #landing {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#p-nosotros #landing h1 {
-  line-height: normal;
-}
-
-#p-nosotros #landing img {
-  margin: 50px 0;
+#p-nosotros #nosotros #landing img {
+  margin: 20px 0;
   width: 100%;
   max-width: 1040px;
   height: auto;
 }
 
-#p-nosotros #sobreNosotros {
-  width: 100%;
+#p-nosotros #nosotros #sobreNosotros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -920,15 +899,14 @@ nav .navB {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-bottom: 72px;
 }
 
-#p-nosotros #sobreNosotros .container {
+#p-nosotros #nosotros #sobreNosotros h2 {
+  margin: 150px 0 48px 0;
+}
+
+#p-nosotros #nosotros .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -936,11 +914,32 @@ nav .navB {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 50px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media (max-width: 600px) {
-  #p-nosotros #sobreNosotros .container {
+#p-nosotros #nosotros .container img {
+  max-width: 448px;
+  width: 100%;
+  height: auto;
+  margin: 30px;
+}
+
+#p-nosotros #nosotros .container p {
+  max-width: 420px;
+  text-align: start;
+  margin: 30px;
+}
+
+@media (max-width: 828px) {
+  #p-nosotros #nosotros #sobreNosotros h2 {
+    margin: 50px 0 24px 0;
+  }
+}
+
+@media (max-width: 828px) and (max-width: 828px) {
+  #p-nosotros #nosotros .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -948,44 +947,79 @@ nav .navB {
   }
 }
 
-#p-nosotros #sobreNosotros .container-left, #p-nosotros #sobreNosotros .container-right {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
+/**#p-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-@media (max-width: 600px) {
-  #p-nosotros #sobreNosotros .container-left, #p-nosotros #sobreNosotros .container-right {
-    width: 100%;
-  }
-}
+    main {
+        padding: 0 20px;
+    }
 
-#p-nosotros #sobreNosotros .container-right p {
-  padding: 0 15%;
-}
+    #landing {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-@media (max-width: 600px) {
-  #p-nosotros #sobreNosotros .container-right p {
-    padding: 0;
-    margin-top: 15px;
-  }
-}
+        h1 {
+            line-height: normal;
+        }
 
-#p-nosotros #sobreNosotros .container-left img {
-  max-width: 250px;
-}
+        img {
+            margin: 50px 0;
+            width: 100%;
+            max-width: 1040px;
+            height: auto;
+        }
+    }
 
+    #sobreNosotros {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            margin: 50px 0;
+
+            @media(max-width: 600px){
+                flex-direction: column;
+            }
+
+            &-left, &-right {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                @media(max-width: 600px){
+                    width: 100%;
+                }
+            }
+
+            &-right {
+                p {
+                    padding: 0 15%;
+                    @media(max-width: 600px){
+                        padding: 0;
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+            &-left {
+                img {
+                    max-width: 250px;
+                }
+            }
+        }
+    }
+}**/
 /**Footer**/
 footer {
   display: -webkit-box;

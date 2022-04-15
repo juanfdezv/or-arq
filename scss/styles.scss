@@ -1,5 +1,5 @@
 @import "variables";
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;800&family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;800&family=Playfair+Display:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -117,6 +117,7 @@ body {
         max-width: $ancho;
         height: auto;
         padding: $padding;
+        font-size: $body1;
         img{
             width: auto;
             height: 424px;
@@ -126,6 +127,7 @@ body {
     @media(max-width: 1052px) {
         .cards{
             max-width: $anchoAdaptable;
+            font-size: $body3;
         }
     }
     @media(max-width: 828px){
@@ -274,6 +276,10 @@ nav{
         p {
             padding: 10px;
             margin: 20px 0;
+            font-size: $body1;
+            @media (max-width: 828px){
+                font-size: $body3;
+            }
         }
     
         img {
@@ -282,6 +288,7 @@ nav{
             max-width: 1040px;
             height: auto;
         }
+
     }
 }
 
@@ -327,6 +334,10 @@ nav{
     p{
         max-width: 686px;
         margin-bottom: 48px;
+        font-size: $body1;
+        @media (max-width: 828px){
+            font-size: $body3;
+        }
     }
     a{
         text-decoration: none;
@@ -384,16 +395,15 @@ nav{
             margin: 30px 0 67px 0;
         }
         .textBox{
-            margin: 26px 390px 25px 390px;
-            @media(max-width: 1310px){
-                margin: 26px 200px 25px 200px;
+            max-width: 650px;
+            margin-top: 25px;
+        }
+        p{
+            font-size: $body1;
+            @media (max-width: 828px){
+                font-size: $body3;
             }
-            @media(max-width: 1040px){
-                margin: 26px 100px 25px 100px;
-            }
-            @media(max-width: 700px){
-                margin: 26px 20px 25px 20px;
-            }
+            
         }
         .contenedorCards{
             @include card(242px,10px,190px);
@@ -441,6 +451,7 @@ nav{
                 width: 100%;
                 height: auto;
                 max-width: 508px;
+                font-size: $body3;
             }    
         }
         @media(max-width: 1052px) {
@@ -541,6 +552,9 @@ nav{
                 font-size: $body1;
                 max-width: 508px;
                 margin-bottom: 120px;
+                @media (max-width: 828px){
+                    font-size: $body3;
+                }
             }    
         }      
     }
@@ -549,6 +563,63 @@ nav{
 /**Nosotros**/
 
 #p-nosotros {
+    #nosotros{
+        @extend %flexContainer; 
+        #landing {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                margin-bottom: 20px;
+            }
+            img {
+                margin: 20px 0;
+                width: 100%;
+                max-width: 1040px;
+                height: auto;
+            }
+        }
+        #sobreNosotros{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 72px;
+            h2{
+                margin: 150px 0 48px 0;
+            }
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            img{
+                max-width: 448px;
+                width: 100%;
+                height: auto;
+                margin: 30px;
+            }
+            p{
+                max-width: 420px;
+                text-align: start;
+                margin: 30px;
+                font-size: $body3;
+            }
+        }
+        @media(max-width: 828px){
+            #sobreNosotros{
+                h2{
+                    margin: 50px 0 24px 0;
+                }    
+            }
+            .container{
+                @media(max-width: 828px){
+                    flex-direction: column;
+                }    
+            }
+        }   
+    }
+}
+
+/**#p-nosotros {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -620,7 +691,7 @@ nav{
             }
         }
     }
-}
+}**/
 
 /**Footer**/
 
