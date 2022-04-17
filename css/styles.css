@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;800&family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;800&family=Playfair+Display:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -126,7 +126,7 @@ body {
 }
 
 /**Mixins y extends**/
-.g-contacto, #introProyectos, #proyectos, #p-servicios #principalServicios, #p-servicios #arquitecturaGeneral, #p-servicios #renovar {
+.g-contacto, #introProyectos, #proyectos, #p-servicios #principalServicios, #p-servicios #arquitecturaGeneral, #p-servicios #renovar, #p-nosotros #nosotros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,6 +352,13 @@ nav .navB {
 #p-index #landing p {
   padding: 10px;
   margin: 20px 0;
+  font-size: 18px;
+}
+
+@media (max-width: 828px) {
+  #p-index #landing p {
+    font-size: 16px;
+  }
 }
 
 #p-index #landing img {
@@ -394,6 +401,7 @@ nav .navB {
   max-width: 331px;
   height: auto;
   padding: 10px;
+  font-size: 18px;
 }
 
 #introProyectos .contenedorCards .cards img {
@@ -406,6 +414,7 @@ nav .navB {
 @media (max-width: 1052px) {
   #introProyectos .contenedorCards .cards {
     max-width: 256px;
+    font-size: 16px;
   }
 }
 
@@ -463,6 +472,13 @@ nav .navB {
 #proyectos p {
   max-width: 686px;
   margin-bottom: 48px;
+  font-size: 18px;
+}
+
+@media (max-width: 828px) {
+  #proyectos p {
+    font-size: 16px;
+  }
 }
 
 #proyectos a {
@@ -504,6 +520,7 @@ nav .navB {
   max-width: 331px;
   height: auto;
   padding: 10px;
+  font-size: 18px;
 }
 
 #proyectos .contenedorCards .cards img {
@@ -516,6 +533,7 @@ nav .navB {
 @media (max-width: 1052px) {
   #proyectos .contenedorCards .cards {
     max-width: 256px;
+    font-size: 16px;
   }
 }
 
@@ -591,24 +609,17 @@ nav .navB {
 }
 
 #p-servicios #principalServicios .textBox {
-  margin: 26px 390px 25px 390px;
+  max-width: 650px;
+  margin-top: 25px;
 }
 
-@media (max-width: 1310px) {
-  #p-servicios #principalServicios .textBox {
-    margin: 26px 200px 25px 200px;
-  }
+#p-servicios #principalServicios p {
+  font-size: 18px;
 }
 
-@media (max-width: 1040px) {
-  #p-servicios #principalServicios .textBox {
-    margin: 26px 100px 25px 100px;
-  }
-}
-
-@media (max-width: 700px) {
-  #p-servicios #principalServicios .textBox {
-    margin: 26px 20px 25px 20px;
+@media (max-width: 828px) {
+  #p-servicios #principalServicios p {
+    font-size: 16px;
   }
 }
 
@@ -636,6 +647,7 @@ nav .navB {
   max-width: 242px;
   height: auto;
   padding: 10px;
+  font-size: 18px;
 }
 
 #p-servicios #principalServicios .contenedorCards .cards img {
@@ -648,6 +660,7 @@ nav .navB {
 @media (max-width: 1052px) {
   #p-servicios #principalServicios .contenedorCards .cards {
     max-width: 190px;
+    font-size: 16px;
   }
 }
 
@@ -742,6 +755,7 @@ nav .navB {
   width: 100%;
   height: auto;
   max-width: 508px;
+  font-size: 16px;
 }
 
 @media (max-width: 1052px) {
@@ -865,8 +879,14 @@ nav .navB {
   margin-bottom: 120px;
 }
 
+@media (max-width: 828px) {
+  #p-servicios #renovar .texto :last-child {
+    font-size: 16px;
+  }
+}
+
 /**Nosotros**/
-#p-nosotros {
+#p-nosotros #nosotros #landing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -879,40 +899,18 @@ nav .navB {
           align-items: center;
 }
 
-#p-nosotros main {
-  padding: 0 20px;
+#p-nosotros #nosotros #landing h1 {
+  margin-bottom: 20px;
 }
 
-#p-nosotros #landing {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#p-nosotros #landing h1 {
-  line-height: normal;
-}
-
-#p-nosotros #landing img {
-  margin: 50px 0;
+#p-nosotros #nosotros #landing img {
+  margin: 20px 0;
   width: 100%;
   max-width: 1040px;
   height: auto;
 }
 
-#p-nosotros #sobreNosotros {
-  width: 100%;
+#p-nosotros #nosotros #sobreNosotros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -920,15 +918,14 @@ nav .navB {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-bottom: 72px;
 }
 
-#p-nosotros #sobreNosotros .container {
+#p-nosotros #nosotros #sobreNosotros h2 {
+  margin: 150px 0 48px 0;
+}
+
+#p-nosotros #nosotros .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -936,11 +933,33 @@ nav .navB {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 50px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media (max-width: 600px) {
-  #p-nosotros #sobreNosotros .container {
+#p-nosotros #nosotros .container img {
+  max-width: 448px;
+  width: 100%;
+  height: auto;
+  margin: 30px;
+}
+
+#p-nosotros #nosotros .container p {
+  max-width: 420px;
+  text-align: start;
+  margin: 30px;
+  font-size: 16px;
+}
+
+@media (max-width: 828px) {
+  #p-nosotros #nosotros #sobreNosotros h2 {
+    margin: 50px 0 24px 0;
+  }
+}
+
+@media (max-width: 828px) and (max-width: 828px) {
+  #p-nosotros #nosotros .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -948,44 +967,79 @@ nav .navB {
   }
 }
 
-#p-nosotros #sobreNosotros .container-left, #p-nosotros #sobreNosotros .container-right {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
+/**#p-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-@media (max-width: 600px) {
-  #p-nosotros #sobreNosotros .container-left, #p-nosotros #sobreNosotros .container-right {
-    width: 100%;
-  }
-}
+    main {
+        padding: 0 20px;
+    }
 
-#p-nosotros #sobreNosotros .container-right p {
-  padding: 0 15%;
-}
+    #landing {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-@media (max-width: 600px) {
-  #p-nosotros #sobreNosotros .container-right p {
-    padding: 0;
-    margin-top: 15px;
-  }
-}
+        h1 {
+            line-height: normal;
+        }
 
-#p-nosotros #sobreNosotros .container-left img {
-  max-width: 250px;
-}
+        img {
+            margin: 50px 0;
+            width: 100%;
+            max-width: 1040px;
+            height: auto;
+        }
+    }
 
+    #sobreNosotros {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            margin: 50px 0;
+
+            @media(max-width: 600px){
+                flex-direction: column;
+            }
+
+            &-left, &-right {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                @media(max-width: 600px){
+                    width: 100%;
+                }
+            }
+
+            &-right {
+                p {
+                    padding: 0 15%;
+                    @media(max-width: 600px){
+                        padding: 0;
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+            &-left {
+                img {
+                    max-width: 250px;
+                }
+            }
+        }
+    }
+}**/
 /**Footer**/
 footer {
   display: -webkit-box;
