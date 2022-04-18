@@ -412,7 +412,6 @@ nav .navB {
 }
 #p-index #p-videos .top .video {
   margin-right: 1rem;
-  width: 350px;
 }
 @media (max-width: 828px) {
   #p-index #p-videos .top .video {
