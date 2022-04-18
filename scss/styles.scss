@@ -157,6 +157,7 @@ nav {
     display: flex;
     justify-content: space-between;
     box-shadow: 4px 4px whitesmoke;
+    border-bottom: 1px solid #dadada;
 
     .barNav {
       margin: 0 10px 0 0;
@@ -192,7 +193,7 @@ nav {
         display: none;
       }
       img {
-        width: 123px;
+        width: 110px;
         height: auto;
       }
     }
