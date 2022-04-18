@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROYECTO | Cubiertas Verdes</title>
     <link rel="stylesheet" href="css/proyectos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body class="proyecto" id="cubiertas-verdes">
     <nav>
@@ -16,7 +17,7 @@
                 </a>         
             </div>      
             <a class="toggle" onclick="alternar('menu')">
-                <img src="https://iili.io/1ymMmX.png" alt="">
+                <i id="hamb-menu" class="fa fa-bars"></i>
             </a>
             <ul class="barNav navA"> 
                 <li><a href="index.html">INICIO</a></li>
@@ -124,18 +125,23 @@
     function alternar(menu)
     {
         var oMenu = document.getElementById(menu);
-    //Si el menu tiene clase abierto
-    //cambia clase a cerrado y cambia el botón
-    if (oMenu.classList.contains('abierto')){
-        oMenu.classList.remove('abierto');
-        oMenu.classList.add('cerrado');
-        //event.target.innerText = 'Abrir'
-    }
-    //Si no está abierto, cambia clase a abierto y cambia el botón 
-    else{
-        oMenu.classList.remove('cerrado');
-        oMenu.classList.add('abierto');
-        //event.target.innerText = 'Cerrar'
+        let hambMenu = document.getElementById("hamb-menu");
+        //Si el menu tiene clase abierto
+        //cambia clase a cerrado y cambia el botón
+        if (oMenu.classList.contains('abierto')){
+            oMenu.classList.remove('abierto');
+            oMenu.classList.add('cerrado');
+            hambMenu.classList.remove('fa-times');
+            hambMenu.classList.add('fa-bars');
+            //event.target.innerText = 'Abrir'
+        }
+        //Si no está abierto, cambia clase a abierto y cambia el botón 
+        else{
+            oMenu.classList.remove('cerrado');
+            oMenu.classList.add('abierto');
+            hambMenu.classList.remove('fa-bars');
+            hambMenu.classList.add('fa-times');
+            //event.target.innerText = 'Cerrar'
         }
     }
     </script>      
