@@ -325,7 +325,7 @@ nav {
         padding: 0;
       }
 
-      img {
+      .video {
         @media (max-width: 551px) {
           width: 300px;
           height: auto;
@@ -334,8 +334,9 @@ nav {
     }
 
     .top {
-      img {
+      .video {
         margin-right: 1rem;
+        width: 350px;
         @media (max-width: 828px) {
           margin: 0;
         }
@@ -355,7 +356,7 @@ nav {
         flex-direction: column-reverse;
       }
 
-      img {
+      .video {
         margin-left: 1rem;
 
         @media (max-width: 828px) {
@@ -742,11 +743,14 @@ nav {
       display: flex;
       flex-direction: row;
       align-items: center;
-      img {
-        max-width: 448px;
-        width: 100%;
+
+      .video {
+        width: 350px;
         height: auto;
-        margin: 30px;
+
+        @media (max-width: 551px) {
+          width: 300px;
+        }
       }
       p {
         max-width: 420px;
