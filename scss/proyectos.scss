@@ -61,12 +61,41 @@ body {
 }
 
 .proyecto {
+  width: 100%;
+  .g-title {
+    height: 10vh;
+    display: none;
+
+    @media (max-width: 828px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h2 {
+      font-size: $headline4;
+      font-family: "Playfair Display", serif;
+    }
+  }
   .g-hero-img-container {
     width: 100%;
     height: auto;
+    position: relative;
     .g-hero-img {
       width: 100%;
       height: auto;
+    }
+    .g-hero-title {
+      position: absolute;
+      bottom: 2rem;
+      left: 15vw;
+      color: white;
+      font-size: $headline1;
+      font-family: "Playfair Display", serif;
+      @media (max-width: 828px) {
+        display: none;
+      }
     }
   }
 
