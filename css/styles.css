@@ -15,7 +15,7 @@ body {
   font-size: 57px;
   font-family: "Playfair Display", serif;
   text-align: center;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 @media (max-width: 828px) {
   .g-tituloPrincipal {
