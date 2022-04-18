@@ -405,6 +405,12 @@ nav .navB {
     padding: 0;
   }
 }
+@media (max-width: 551) {
+  #p-index #p-videos .container img {
+    width: 300px;
+    height: auto;
+  }
+}
 #p-index #p-videos .top img {
   margin-right: 1rem;
 }

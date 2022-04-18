@@ -325,6 +325,13 @@ nav {
         flex-direction: column;
         padding: 0;
       }
+
+      img {
+        @media (max-width: 551) {
+          width: 300px;
+          height: auto;
+        }
+      }
     }
 
     .top {
