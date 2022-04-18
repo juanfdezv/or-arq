@@ -405,7 +405,7 @@ nav .navB {
     padding: 0;
   }
 }
-@media (max-width: 551) {
+@media (max-width: 551px) {
   #p-index #p-videos .container img {
     width: 300px;
     height: auto;
