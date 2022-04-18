@@ -1,162 +1,158 @@
 @import "variables";
 @import "styles";
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;800&family=Playfair+Display:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;800&family=Playfair+Display:wght@400;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100vw;
-    font-family: 'Nunito Sans', sans-serif;
+  width: 100vw;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.g-tituloInfo{
+.g-tituloInfo {
+  font-size: $headline6;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  padding-bottom: 8px;
+  @media (max-width: 828px) {
     font-size: $headline6;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    padding-bottom: 8px;
-    @media(max-width: 828px){
-        font-size: $headline6;
-        font-weight: 400;
-    }
+    font-weight: 400;
+  }
 }
 
-.g-tituloSeccion{
-    font-size: $headline2;
-    font-family: 'Playfair Display', serif;
-    @media(max-width: 828px){
-        font-size: $headline5;
-    }
+.g-tituloSeccion {
+  font-size: $headline2;
+  font-family: "Playfair Display", serif;
+  @media (max-width: 828px) {
+    font-size: $headline5;
+  }
 }
 
 .g-button {
-    color: #ffffff;
-    background-color: $bgVerde;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-    padding: .75em 3em;
-    margin: 5px 0;
-    cursor: pointer;
-    max-width: 200px;
+  color: #ffffff;
+  background-color: $bgVerde;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75em 3em;
+  margin: 5px 0;
+  cursor: pointer;
+  max-width: 200px;
 }
 
 .g-coordinemos-container {
-    width: 100%;
-    height: 40vh;
-    background-color: $bgCrema;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 40vh;
+  background-color: $bgCrema;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    & > * {
-        margin: 15px 0;
-    }
-
-    & > .g-button {
-        padding-top: 8px;
-    }
+  & > * {
+    margin: 15px 0;
+  }
 }
 
 .proyecto {
-    .g-hero-img-container {
-        width: 100%;
-        height: auto;
-        .g-hero-img {
-            width: 100%;
-            height: auto;
-        }
+  .g-hero-img-container {
+    width: 100%;
+    height: auto;
+    .g-hero-img {
+      width: 100%;
+      height: auto;
     }
+  }
 
-    .g-info-container {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        min-height: 40vh;
-        height: auto;
-        padding: 10px 15vw;
+  .g-info-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 40vh;
+    height: auto;
+    padding: 10px 15vw;
 
+    .g-info {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+      height: auto;
 
-        .g-info {
-            display: flex;
-            align-items: flex-start;
-            width: 100%;
-            height: auto;
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
 
-            @media(max-width: 600px){
-                flex-direction: column;
-            }
-    
-            .container-left {
-                flex: 1;
-                padding-right: 35px;
-            }
-    
-            .container-right {
-                flex: 3;
-            }
+      .container-left {
+        flex: 1;
+        padding-right: 35px;
+      }
 
-            .ubicacion {
-                margin-bottom: 20px;
-            }
+      .container-right {
+        flex: 3;
+      }
 
-            .descripcion {
-                margin-bottom: 20px;
-            }
-        }
+      .ubicacion {
+        margin-bottom: 20px;
+      }
+
+      .descripcion {
+        margin-bottom: 20px;
+      }
     }
+  }
 
-    .fotos {
-        width: 100%;
-        height: auto;
-        padding: 0 15vw;
+  .fotos {
+    width: 100%;
+    height: auto;
+    padding: 0 15vw;
 
-        & > * {
-            margin-bottom: 20px;
-            width: 100%;
-            height: auto;
-        }
+    & > * {
+      margin-bottom: 20px;
+      width: 100%;
+      height: auto;
     }
-    .masProyectos{
-        @extend %flexContainer;
-        h3{
-            font-family: 'Playfair Display', serif;
-            font-size: $headline3;
-            margin: 76px 0 69px 0;
-        }
-        .contenedorCards{
-            margin-bottom: 77px;
-            @include card(331px,10px,270px);
-            a{
-                text-decoration: none;
-                color: #000;
-            }
-            h5{
-                margin-top: 20px;
-                margin-bottom: 20px;
-            } 
-            .card1{
-                margin-top: 176px;
-            }
-            .card3{
-                margin-top: 112px;
-            }
-        } 
-        @media (max-width: 767px){
-            h3{
-                font-size: $headline5;
-            }
-            .contenedorCards{
-                .card1, .card3{
-                    margin-top: 0;
-                }
-            }    
-        }
+  }
+  .masProyectos {
+    @extend %flexContainer;
+    h3 {
+      font-family: "Playfair Display", serif;
+      font-size: $headline3;
+      margin: 76px 0 69px 0;
     }
+    .contenedorCards {
+      margin-bottom: 77px;
+      @include card(331px, 10px, 270px);
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      h5 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .card1 {
+        margin-top: 176px;
+      }
+      .card3 {
+        margin-top: 112px;
+      }
+    }
+    @media (max-width: 767px) {
+      h3 {
+        font-size: $headline5;
+      }
+      .contenedorCards {
+        .card1,
+        .card3 {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }
