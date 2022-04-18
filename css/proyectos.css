@@ -16,7 +16,7 @@ body {
   font-size: 57px;
   font-family: "Playfair Display", serif;
   text-align: center;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 @media (max-width: 828px) {
   .g-tituloPrincipal {
@@ -835,7 +835,7 @@ nav .navB {
 }
 #p-nosotros #nosotros #landing img {
   margin: 20px 0;
-  width: 100%;
+  width: 90%;
   max-width: 1040px;
   height: auto;
 }

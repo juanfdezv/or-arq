@@ -355,6 +355,98 @@ nav .navB {
   max-width: 1040px;
   height: auto;
 }
+#p-index #p-videos {
+  background-color: #F2ECDE;
+  height: auto;
+  width: 100%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 828px) {
+  #p-index #p-videos {
+    padding: 2rem 1rem;
+  }
+}
+#p-index #p-videos h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#p-index #p-videos .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+@media (max-width: 828px) {
+  #p-index #p-videos .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+}
+#p-index #p-videos .top img {
+  margin-right: 1rem;
+}
+@media (max-width: 828px) {
+  #p-index #p-videos .top img {
+    margin: 0;
+  }
+}
+#p-index #p-videos .top p {
+  margin-left: 1rem;
+}
+@media (max-width: 828px) {
+  #p-index #p-videos .top p {
+    margin: 0;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 828px) {
+  #p-index #p-videos .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+#p-index #p-videos .bottom img {
+  margin-left: 1rem;
+}
+@media (max-width: 828px) {
+  #p-index #p-videos .bottom img {
+    margin: 0;
+  }
+}
+#p-index #p-videos .bottom p {
+  margin-right: 1rem;
+}
+@media (max-width: 828px) {
+  #p-index #p-videos .bottom p {
+    margin: 0;
+    margin-top: 1rem;
+  }
+}
 
 /**Seccion introduccion proyectos**/
 #introProyectos h2 {
