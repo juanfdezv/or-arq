@@ -722,6 +722,14 @@ nav {
       align-items: center;
       h1 {
         margin-bottom: 20px;
+        line-height: 4rem;
+        @media (max-width: 551px) {
+          line-height: 2.5rem;
+        }
+
+        @media (max-width: 551px) {
+          line-height: 3.25rem;
+        }
       }
       img {
         margin: 20px 0;

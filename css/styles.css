@@ -1009,6 +1009,17 @@ nav .navB {
 }
 #p-nosotros #nosotros #landing h1 {
   margin-bottom: 20px;
+  line-height: 4rem;
+}
+@media (max-width: 551px) {
+  #p-nosotros #nosotros #landing h1 {
+    line-height: 2.5rem;
+  }
+}
+@media (max-width: 551px) {
+  #p-nosotros #nosotros #landing h1 {
+    line-height: 3.25rem;
+  }
 }
 #p-nosotros #nosotros #landing img {
   margin: 20px 0;
