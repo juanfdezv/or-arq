@@ -150,6 +150,10 @@ body {
 /**Nav**/
 
 nav {
+    position: sticky;
+    width: 100%;
+    background-color: #ffffff;
+    top: 0;
   .cajaNav {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 700;

@@ -122,28 +122,26 @@
         </div>
     </footer>        
     <script>
-    function alternar(menu)
-    {
-        var oMenu = document.getElementById(menu);
-        let hambMenu = document.getElementById("hamb-menu");
-        //Si el menu tiene clase abierto
-        //cambia clase a cerrado y cambia el botón
-        if (oMenu.classList.contains('abierto')){
-            oMenu.classList.remove('abierto');
-            oMenu.classList.add('cerrado');
-            hambMenu.classList.remove('fa-times');
-            hambMenu.classList.add('fa-bars');
-            //event.target.innerText = 'Abrir'
+        function alternar(menu)
+        {
+            var oMenu = document.getElementById(menu);
+            let hambMenu = document.getElementById("hamb-menu");
+            //Si el menu tiene clase abierto
+            //cambia clase a cerrado y cambia el botón
+            if (oMenu.classList.contains('abierto')){
+                oMenu.classList.remove('abierto');
+                oMenu.classList.add('cerrado');
+                hambMenu.classList.remove('fa-times');
+                hambMenu.classList.add('fa-bars');
+            }
+            //Si no está abierto, cambia clase a abierto y cambia el botón 
+            else{
+                oMenu.classList.remove('cerrado');
+                oMenu.classList.add('abierto');
+                hambMenu.classList.remove('fa-bars');
+                hambMenu.classList.add('fa-times');
+            }
         }
-        //Si no está abierto, cambia clase a abierto y cambia el botón 
-        else{
-            oMenu.classList.remove('cerrado');
-            oMenu.classList.add('abierto');
-            hambMenu.classList.remove('fa-bars');
-            hambMenu.classList.add('fa-times');
-            //event.target.innerText = 'Cerrar'
-        }
-    }
-    </script>      
+    </script>
 </body>
 </html>
