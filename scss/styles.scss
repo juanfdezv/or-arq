@@ -333,10 +333,11 @@ nav {
 
     .container {
       display: flex;
-      padding: 0 20vw;
+      padding: 0 2rem;
       justify-content: center;
       align-items: center;
       margin: 1rem 0;
+      max-width: 1000px;
 
       @media (max-width: 828px) {
         flex-direction: column;
