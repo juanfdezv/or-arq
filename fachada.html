@@ -73,7 +73,7 @@
         <div class="contenedorCards">
             <a href="piscinanatural.html">
                 <div class="cards card1">
-                    <img src="https://iili.io/MU3oKv.jpg" alt="...">
+                    <img src="https://iili.io/MU3oKv.jpg" alt="piscina con rocas estilo natural">
                     <div>
                         <h5 class="g-tituloCards">Piscina Natural</h5>
                         <p>Hacer de tu patio un oasis de relajación y disfrute.</p>
@@ -82,7 +82,7 @@
             </a>
             <a href="cubiertasverdes.html">
                 <div class="cards card2">
-                    <img src="https://iili.io/MU3xlR.webp" alt="...">
+                    <img src="https://iili.io/MU3xlR.webp" alt="Parquización">
                     <div>
                         <h5 class="g-tituloCards">Cubiertas verdes</h5>
                         <p>Las posibilidades de aumentar las áreas verdes, más allá de los patios, parques y jardines, son múltiples.</p>
@@ -91,7 +91,7 @@
             </a>
             <a href="galeria.html">
                 <div class="cards card3">
-                    <img src="https://iili.io/MU3CiJ.jpg" alt="...">
+                    <img src="https://iili.io/MU3CiJ.jpg" alt="galeria de vivienda">
                     <div>
                         <h5 class="g-tituloCards">Galería</h5>
                         <p>Dar solución para lograr la mayor integración con el medio, es nuestro objetivo.</p>
@@ -123,28 +123,26 @@
         </div>
     </footer>        
     <script>
-    function alternar(menu)
-    {
-        var oMenu = document.getElementById(menu);
-        let hambMenu = document.getElementById("hamb-menu");
-        //Si el menu tiene clase abierto
-        //cambia clase a cerrado y cambia el botón
-        if (oMenu.classList.contains('abierto')){
-            oMenu.classList.remove('abierto');
-            oMenu.classList.add('cerrado');
-            hambMenu.classList.remove('fa-times');
-            hambMenu.classList.add('fa-bars');
-            //event.target.innerText = 'Abrir'
+        function alternar(menu)
+        {
+            var oMenu = document.getElementById(menu);
+            let hambMenu = document.getElementById("hamb-menu");
+            //Si el menu tiene clase abierto
+            //cambia clase a cerrado y cambia el botón
+            if (oMenu.classList.contains('abierto')){
+                oMenu.classList.remove('abierto');
+                oMenu.classList.add('cerrado');
+                hambMenu.classList.remove('fa-times');
+                hambMenu.classList.add('fa-bars');
+            }
+            //Si no está abierto, cambia clase a abierto y cambia el botón 
+            else{
+                oMenu.classList.remove('cerrado');
+                oMenu.classList.add('abierto');
+                hambMenu.classList.remove('fa-bars');
+                hambMenu.classList.add('fa-times');
+            }
         }
-        //Si no está abierto, cambia clase a abierto y cambia el botón 
-        else{
-            oMenu.classList.remove('cerrado');
-            oMenu.classList.add('abierto');
-            hambMenu.classList.remove('fa-bars');
-            hambMenu.classList.add('fa-times');
-            //event.target.innerText = 'Cerrar'
-        }
-    }
-    </script>      
+    </script>        
 </body>
 </html>
