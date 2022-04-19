@@ -458,7 +458,7 @@ nav {
 
   @extend %flexContainer;
   h2 {
-    margin: 31px 0 72px 0;
+    margin: 31px 0 60px 0;
   }
   p {
     margin: 20px;
@@ -569,6 +569,7 @@ nav {
     }
     .contenedorCards {
       @include card(242px, 10px, 190px);
+      padding-bottom: 50px;
       .segundoContenedor {
         display: flex;
         .cardImg {

@@ -612,7 +612,7 @@ nav .navB {
 }
 
 #introProyectos h2 {
-  margin: 31px 0 72px 0;
+  margin: 31px 0 60px 0;
 }
 
 #introProyectos p {
@@ -878,6 +878,7 @@ nav .navB {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  padding-bottom: 50px;
 }
 
 #p-servicios #principalServicios .contenedorCards .cards {
