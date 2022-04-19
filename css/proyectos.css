@@ -145,6 +145,13 @@ body {
 }
 
 /**Nav**/
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  background-color: #ffffff;
+  top: 0;
+}
 nav .cajaNav {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
@@ -400,6 +407,7 @@ nav .navB {
 #p-index #p-videos h2 {
   text-align: center;
   margin-bottom: 2rem;
+  padding: 200px;
 }
 #p-index #p-videos .container {
   display: -webkit-box;
@@ -555,7 +563,7 @@ nav .navB {
   padding-bottom: 2rem;
 }
 #introProyectos h2 {
-  margin: 31px 0 72px 0;
+  margin: 31px 0 60px 0;
 }
 #introProyectos p {
   margin: 20px;
@@ -789,6 +797,7 @@ nav .navB {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  padding-bottom: 50px;
 }
 #p-servicios #principalServicios .contenedorCards .cards {
   display: -webkit-box;
