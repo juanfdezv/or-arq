@@ -407,13 +407,18 @@ nav .navB {
 #p-index #p-videos h2 {
   text-align: center;
   margin-bottom: 2rem;
-  padding: 200px;
+  padding: 0 20%;
+}
+@media (max-width: 828px) {
+  #p-index #p-videos h2 {
+    padding: 0;
+  }
 }
 #p-index #p-videos .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 20vw;
+  padding: 0 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -421,6 +426,7 @@ nav .navB {
       -ms-flex-align: center;
           align-items: center;
   margin: 1rem 0;
+  max-width: 1000px;
 }
 @media (max-width: 828px) {
   #p-index #p-videos .container {

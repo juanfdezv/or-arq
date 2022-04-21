@@ -344,7 +344,7 @@ nav {
         padding: 0;
       }
 
-      .video {
+      .img-new {
         @media (max-width: 551px) {
           width: 300px;
           height: auto;
@@ -353,7 +353,7 @@ nav {
     }
 
     .top {
-      .video {
+      .img-new {
         margin-right: 1rem;
         @media (max-width: 828px) {
           margin: 0;
@@ -374,7 +374,7 @@ nav {
         flex-direction: column-reverse;
       }
 
-      .video {
+      .img-new {
         margin-left: 1rem;
 
         @media (max-width: 828px) {
