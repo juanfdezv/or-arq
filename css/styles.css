@@ -161,8 +161,9 @@ nav .cajaNav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-shadow: 4px 4px whitesmoke;
-          box-shadow: 4px 4px whitesmoke;
+  box-shadow: -2px 4px 33px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: -2px 4px 33px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -2px 4px 33px 1px rgba(0, 0, 0, 0.15);
   border-bottom: 1px solid #dadada;
 }
 nav .cajaNav .barNav {
