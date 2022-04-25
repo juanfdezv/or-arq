@@ -122,21 +122,22 @@ body {
   margin: 15px 0;
 }
 
-.g-contacto {
-  width: 100%;
-  background: #F2ECDE;
-}
-
-.g-contacto :first-child {
-  margin: 100px 0 11px 0;
-}
-
-.g-contacto :last-child {
-  margin: 35px 0 120px 0;
+.g-coordinemos-container .wsp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px;
 }
 
 /**Mixins y extends**/
-.g-contacto, #introProyectos, #proyectos, #p-servicios #principalServicios, #p-servicios #arquitecturaGeneral, #p-servicios #renovar, #p-nosotros #nosotros {
+#introProyectos, #proyectos, #p-servicios #principalServicios, #p-servicios #arquitecturaGeneral, #p-servicios #renovar, #p-nosotros #nosotros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
