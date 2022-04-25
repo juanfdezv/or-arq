@@ -58,6 +58,17 @@ body {
   & > * {
     margin: 15px 0;
   }
+  .wsp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    :first-child{
+      margin-right: 15px;
+    }
+    :last-child{
+      font-size: $body1;
+    }
+  }  
 }
 
 .proyecto {
