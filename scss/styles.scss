@@ -84,14 +84,14 @@ body {
   & > * {
     margin: 15px 0;
   }
-  .wsp{
+  .wsp {
     display: flex;
     flex-direction: row;
     align-items: center;
-    :first-child{
+    :first-child {
       margin-right: 15px;
     }
-    :last-child{
+    :last-child {
       font-size: $body1;
     }
   }
@@ -499,7 +499,7 @@ nav {
   h1 {
     margin-bottom: 48px;
   }
-  p {
+  .textoPrincipal {
     max-width: 686px;
     margin-bottom: 48px;
     font-size: $body1;
