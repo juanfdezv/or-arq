@@ -82,7 +82,7 @@ body {
   justify-content: center;
 
   & > * {
-    margin: 15px 0;
+    margin: 25px 0;
   }
   .wsp {
     display: flex;
@@ -465,6 +465,11 @@ nav {
 
             p {
               margin-left: 1rem;
+            }
+
+            a {
+              text-decoration: none;
+              color: #000;
             }
           }
         }
@@ -855,6 +860,10 @@ footer {
     }
   }
   :last-child {
+    a {
+      text-decoration: none;
+      color: #000;
+    }
     p {
       margin-bottom: 9px;
     }
